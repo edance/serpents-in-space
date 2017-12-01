@@ -52,7 +52,7 @@ namespace Serpent {
   private:
     void create_body();
 	float m_speed;
-	
+
 
     // Level 1/2
     Zeni::Camera m_camera;

@@ -15,9 +15,9 @@ namespace Serpent
 		Rocket(const Zeni::Point3f &position_, const Zeni::Vector3f &velocity_);
 		Rocket & operator=(const Rocket &rhs);
 		~Rocket();
-		
+
 		void render();
-		
+
 		const Zeni::Collision::Sphere & get_body() const {return m_body;}
 
 		const Zeni::Point3f get_position() const;
@@ -27,7 +27,7 @@ namespace Serpent
 		void explode(const float curTime);
 
 		const bool isTerminated() const;
-	
+
 	private:
 		void create_body();
 		Zeni::Vector3f m_velocity;
@@ -38,7 +38,7 @@ namespace Serpent
 		// Level 1
 		static Zeni::Model * m_model;
 		static Zeni::Model * m_explosion;
-		
+
 		// Level 2
 		Zeni::Point3f m_corner;
 		Zeni::Vector3f m_scale;
